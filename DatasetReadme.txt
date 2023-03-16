@@ -1,0 +1,6 @@
+Column: gender Values: ['M' 'F'] Changed to: [0, 1]
+Column: type Values: ['E' 'O'] Changed to: [0, 1]
+Column: outcome Values: ['DISCHARGE' 'EXPIRY' 'DAMA'] Changed to: [0, 1, 2]
+Column: group_age Values: ['76-150' '46-60' '31-45' '61-75' '0-30'] Changed to: [0, 1, 2, 3, 4]
+Column: group_plate Values: ['normal' 'low' 'high'] Changed to: [0, 1, 2]
+Column: group_ejectf Values: ['d_normal' 'a_severeHF' 'b_mildHF' 'c_belowNormal'] Changed to: [0, 1, 2, 3]
