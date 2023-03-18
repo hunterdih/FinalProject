@@ -80,7 +80,7 @@ def simple_mlp_model(x_train,
         difference = abs(history.history[epoch_metric][0] - history.history[epoch_metric][9])
         elapsed_time = time.time() - start_time
         epochs += 10
-        print(f'{epochs=}') # epoch return
+        print(f'{epochs=}')
 
     y_results_test = model.predict(x_test)
     if verbose:
