@@ -71,7 +71,7 @@ def simple_mlp_model(x_train,
     # Train until the accuracy difference between 10 epochs is less than 0.1% or n minutes has elapsed
     elapsed_time = 0
 
-    while difference >= 0.0005 and elapsed_time < 60 * 5 or epochs < 50:
+    while difference >= 0.0005 and elapsed_time < 60 * time_limit or epochs < 50:
         history = model.fit(x_train, y_train, validation_split=0.35, batch_size=150, epochs=10, verbose=1)
         accuracy.extend(history.history['accuracy'])
         validation_accuracy.extend(history.history['val_accuracy'])
